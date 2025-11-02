@@ -16,3 +16,6 @@ We explore computer science, data, art, and sound through projects, talks, and w
 - Collaborate with the Walla Walla community on different projects
 
 [Learn more about our projects →]({{ site.baseurl }}/projects.html)
+
+## What will ACM hold for you? 
+**Spin to find out**
