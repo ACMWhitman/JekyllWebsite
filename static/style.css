@@ -20,7 +20,7 @@
 /* ---------- BODY (TEXTURED BACKGROUND) ---------- */
 body {
   background-color: var(--paper);
-  background-image: url("noise and gradient lavender.jpeg");
+  background-image: url("images/noise and gradient lavender.jpeg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
