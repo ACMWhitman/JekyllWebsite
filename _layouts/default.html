@@ -1,57 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} - Resonate Data Lab</title>
-  <link rel="stylesheet" href="{{ '/static/style.css' | relative_url }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ACM Whitman</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Vertical Mute Button -->
-<div id="muteToggle" class="mute-vertical" onclick="toggleMute()">
-  <span class="letter">M</span>
-  <span class="letter">U</span>
-  <span class="letter">T</span>
-  <span class="letter">E</span>
-  <div class="mute-circle" id="muteCircle"></div>
-</div>
+  <nav class="navbar">
+    <div class="logo">WHITMAN ACM</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="team.html">Team</a></li>
+    </ul>
+  </nav>
 
-  <!-- Main Site -->
-  <div class="main-site" id="mainSite">
-    <header>
-      <div class="header-content">
-        <a href="{{ '/' | relative_url }}" class="logo">Resonate Data Lab</a>
-        <button class="menu-toggle" onclick="toggleMenu()">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
-         
-        <nav id="mainNav">
-          <a href="{{ '/About/' | relative_url }}" class="nav-link {% if page.url contains '/About' %}active{% endif %}">About</a>
-          <a href="{{ '/Team/' | relative_url }}" class="nav-link {% if page.url contains '/Team' %}active{% endif %}">Team</a>
-          <a href="{{ '/Projects/' | relative_url }}" class="nav-link {% if page.url contains '/Projects' %}active{% endif %}">Projects</a>
-          <a href="{{ '/contribute/' | relative_url }}" class="nav-link {% if page.url contains '/contribute' %}active{% endif %}">Contribute</a>
-          <a href="{{ '/toolbox/' | relative_url }}" class="nav-link {% if page.url contains '/toolbox' %}active{% endif %}">Resources</a>
-        </nav>
-      </div>
-    </header>
+  <header class="hero small">
+    <h1 class="title">Projects</h1>
+    <p class="meta">Creative, technical, interdisciplinary work by ACM members</p>
+  </header>
 
-    <main>
-      {{ content }}
-    </main>
+  <section class="content-box">
+    <h2>Recent Highlights</h2>
+    <ul class="project-list">
+      <li><strong>Project Blah:</strong> description blah blah</li>
+    </ul>
+  </section>
 
-    <footer>
-      <p>&copy; made with care and coffee by the RDL Summer'25 Team</p>
-    </footer>
-  </div>
-
-  <script src="{{ '/assets/script.js' | relative_url }}"></script>
+  <footer>
+    <p>Made with 💜 by Whitman ACM.</p>
+  </footer>
 </body>
-  
+</html>
