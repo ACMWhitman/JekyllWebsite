@@ -1,0 +1,6 @@
+title: Whitman ACM
+description: Official ACM Student Chapter at Whitman College
+url: "https://acmwhitman.github.io"
+baseurl: "/JekyllWebsite"    # change the repo nameee
+markdown: kramdown
+theme: minima
